@@ -1,39 +1,38 @@
 import React, { Component } from "react";
+//import { Link } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
 
 class Header extends Component {
   state = {};
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar  navbar-expand-md navbar-dark bg-secondary">
-          <button
-            type="button"
-            className="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#myNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div id="myNav" className="collapse navbar-collapse">
-            <ul className=" navbar-nav">
-              <li className="nav-item active">
+        <Navbar
+          collapseOnSelect
+          expand="md"
+          className="navbar-dark bg-secondary "
+        >
+          <Navbar.Toggle />
+          <Navbar.Collapse>
+            <Nav>
+              <Nav.Item>
                 <a className="nav-link" href="https://www.pep.co.ir">
                   Home
                 </a>
-              </li>
-              <li className="nav-item active">
+              </Nav.Item>
+              <Nav.Item>
                 <a className="nav-link" href="https://www.pep.co.ir/about-us/">
                   About
                 </a>
-              </li>
-              <li className="nav-item active">
+              </Nav.Item>
+              <Nav.Item>
                 <a className="nav-link" href="https://www.pep.co.ir/helpdesk/">
                   Help
                 </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </React.Fragment>
     );
   }
