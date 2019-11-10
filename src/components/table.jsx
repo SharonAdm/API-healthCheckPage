@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Row from "./test";
+import Row from "./row";
 
 class Table extends Component {
   state = {
