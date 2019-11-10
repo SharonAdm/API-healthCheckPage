@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 class Header extends Component {
   state = {};
+
   render() {
     return (
       <React.Fragment>
@@ -11,9 +12,18 @@ class Header extends Component {
           expand="md"
           className="navbar-dark bg-secondary "
         >
+          <Navbar.Brand>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Pasargad_Electronic_Payment_Services_Company_logo.png"
+              height="45"
+              width="45"
+              className="align-top"
+              alt="logo"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
-            <Nav>
+            <Nav className="ml-auto">
               <Nav.Item>
                 <a className="nav-link" href="https://www.pep.co.ir">
                   Home
