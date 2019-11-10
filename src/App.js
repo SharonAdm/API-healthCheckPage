@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/header";
-import Table from "./components/test2";
+import Table from "./components/row";
 
 class App extends Component {
   render() {
