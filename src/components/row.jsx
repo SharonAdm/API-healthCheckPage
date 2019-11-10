@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle, faSpinner, faTimesCircle} from '@fortawesome/free-solid-svg-icons'
 
 class Row extends Component {
   state = {
@@ -25,9 +25,9 @@ class Row extends Component {
       <tr>
         <td>{this.props.row.name}</td>
         {this.state.status !== undefined && (
-          <td>{this.state.status ? (<FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>) : "false"}</td>
+          <td>{this.state.status ? (<FontAwesomeIcon icon={faCheckCircle} className="text-success"></FontAwesomeIcon>) : (<FontAwesomeIcon icon={faTimesCircle} className="text-danger"></FontAwesomeIcon>)}</td>
         )}
-        {this.state.status === undefined && <td>{"-"}</td>}
+        {this.state.status === undefined && <td>{(<FontAwesomeIcon icon={faSpinner} className="text-primary"></FontAwesomeIcon>)}</td>}
       </tr>
     );
   }
