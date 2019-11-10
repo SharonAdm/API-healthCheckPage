@@ -12,7 +12,10 @@ class Header extends Component {
           expand="md"
           className="navbar-dark bg-secondary "
         >
-          <Navbar.Brand>
+          <Navbar.Brand
+            href="https://www.pep.co.ir"
+            title="شرکت پرداخت الکترونیک پاسارگاد"
+          >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Pasargad_Electronic_Payment_Services_Company_logo.png"
               height="45"
@@ -25,17 +28,20 @@ class Header extends Component {
           <Navbar.Collapse>
             <Nav className="ml-auto">
               <Nav.Item>
-                <a className="nav-link" href="https://www.pep.co.ir">
-                  Home
-                </a>
-              </Nav.Item>
-              <Nav.Item>
-                <a className="nav-link" href="https://www.pep.co.ir/about-us/">
+                <a
+                  className="nav-link"
+                  href="https://www.pep.co.ir/about-us/"
+                  title="درباره ما"
+                >
                   About
                 </a>
               </Nav.Item>
               <Nav.Item>
-                <a className="nav-link" href="https://www.pep.co.ir/helpdesk/">
+                <a
+                  className="nav-link"
+                  href="https://www.pep.co.ir/helpdesk/"
+                  title="امداد مشتریان پاسارگاد"
+                >
                   Help
                 </a>
               </Nav.Item>
