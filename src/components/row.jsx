@@ -24,6 +24,7 @@ class Row extends Component {
     return (
       <tr>
         <td>{this.props.row.name}</td>
+        <td>{this.props.row.description}</td>
         {this.state.status !== undefined && (
           <td>{this.state.status ? (<FontAwesomeIcon icon={faCheckCircle} className="text-success"></FontAwesomeIcon>) : (<FontAwesomeIcon icon={faTimesCircle} className="text-danger"></FontAwesomeIcon>)}</td>
         )}
