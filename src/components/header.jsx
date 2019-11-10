@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar  navbar-expand-md navber-fixed-top navbar-dark bg-secondary">
+        <nav className="navbar  navbar-expand-md navbar-dark bg-secondary">
           <button
             type="button"
             className="navbar-toggler"
